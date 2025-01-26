@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login Clone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      width: 350px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .login-container img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .login-container button {
+      width: 100%;
+      background-color: #0095f6;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-container button:hover {
+      background-color: #007ac1;
+    }
+
+    .login-container .divider {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .login-container .divider::before,
+    .login-container .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    .login-container .divider span {
+      margin: 0 10px;
+      color: #8e8e8e;
+      font-size: 12px;
+    }
+
+    .login-container .facebook-login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #385185;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .login-container .facebook-login img {
+      width: 20px;
+      margin-right: 8px;
+    }
+
+    .login-container .forgot-password {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #385185;
+      text-decoration: none;
+    }
+
+    .signup {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .signup a {
+      color: #0095f6;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <!-- Логотип -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+
+    <!-- Форма входа -->
+    <form action="#">
+      <input type="text" placeholder="Телефон, имя пользователя или эл. адрес" required>
+      <input type="password" placeholder="Пароль" required>
+      <button type="submit">Войти</button>
+    </form>
+
+    <!-- Разделитель -->
+    <div class="divider">
+      <span>ИЛИ</span>
+    </div>
+
+    <!-- Кнопка входа через Facebook -->
+    <a href="#" class="facebook-login">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      Войти через Facebook
+    </a>
+
+    <!-- Забыл пароль -->
+    <a href="#" class="forgot-password">Забыли пароль?</a>
+  </div>
+
+  <!-- Регистрация -->
+  <div class="signup">
+    У вас ещё нет аккаунта? <a href="#">Зарегистрироваться</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram</title>
+    <link rel="icon" href="insta2.png" type="image/png">
+   
+    <style>
+        
+        .image-absolute {
+            position: absolute;
+            top: 9px; /* Расстояние от верхней границы */
+            left: 351px; /* Расстояние от левой границы */
+        }  
+        .login-container {
+            position: absolute;
+            top: 40px;
+            left: 800px;
+            width: 350px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .login-container img {
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login-container button {
+            width: 100%;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    
+
+    </style>
+</head>
+<body>
+
+    
+<img src="insta.png" width="426" height="638" class="image-absolute">
+
+<div class="login-container">
+
+    <img src="insta3.png" alt="Instagram Logo">
+
+    
+    <form action="#">
+      <input type="text" placeholder="Телефон, имя пользователя или эл. адрес" required>
+      <input type="password" placeholder="Пароль" required>
+      <button type="submit">Войти</button>
+    </form>
+
+    
+    <div class="divider">
+      <span>ИЛИ</span>
+    </div>
+
+   
+    <!-- <a href="#" class="facebook-login">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      Войти через Facebook
+    </a> -->
+
+   
+    <a href="#" class="forgot-password">Забыли пароль?</a>
+  </div>
+
+
+</body>
+</html>
