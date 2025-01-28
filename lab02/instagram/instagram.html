@@ -8,18 +8,18 @@
         
         .image-absolute {
             position: absolute;
-            top: 9px; /* Расстояние от верхней границы */
-            left: 351px; /* Расстояние от левой границы */
+            top: 9px;
+            left: 351px; 
         }  
         .login-container {
             position: absolute;
             top: 40px;
             left: 800px;
-            width: 350px;
+            width: 310px;
             padding: 20px;
             background-color: #fff;
             border: 1px solid #dbdbdb;
-            border-radius: 8px;
+            border-radius: 1px;
             text-align: center;
         }
         .login-container img {
@@ -45,6 +45,78 @@
             font-weight: bold;
             cursor: pointer;
             margin-top: 10px;
+        }
+        .login-container .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .login-container .divider::before,
+        .login-container .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #dbdbdb;
+        }
+
+        .login-container .divider span {
+            margin: 0 10px;
+            color: #8e8e8e;
+            font-size: 12px;
+        }
+        .login-container .facebook-login img{
+            width: 20px;
+            margin-top: 20px;
+            margin-right: 10px;
+
+        } 
+
+        .login-container .facebook-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #385185;
+            font-weight: bold;
+            text-decoration: none;
+            
+        } 
+
+        .login-container .forgot-password {
+            color: #385185;
+            text-decoration: none;
+            font-size: 15px;
+            margin-top: 5px;
+            display: block;
+        }
+        .signup {
+            position: absolute;
+            top: 500px;
+            left: 800px;
+            width: 310px;
+            padding-left: 20px;
+            padding-right: 20px;
+            /* padding: 20px; */
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 1px;
+            margin-top: 6px ;
+            text-align: center;
+        }
+        .signup .singuplink {
+            color: #385185;
+            text-decoration: none;
+        }
+        .links {
+            position: absolute;
+            top: 685px; 
+            left: 150px;    
+        }
+
+        .links .aaa {
+            font-size: 13px;
+            color: #8e8e8e;
+            margin: 10px;
+            text-decoration: none;
         }
     
 
@@ -72,15 +144,34 @@
     </div>
 
    
-    <!-- <a href="#" class="facebook-login">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+    <a href="https://www.facebook.com/" class="facebook-login">
+      <img src="facebook2.png"  alt="Facebook">
       Войти через Facebook
-    </a> -->
+    </a>
 
    
-    <a href="#" class="forgot-password">Забыли пароль?</a>
-  </div>
+    <a href="https://www.instagram.com/accounts/password/reset/" class="forgot-password">Забыли пароль?</a>
+</div>
 
+<div class = "signup">
+    <p>У вас ещё нет аккаунта? <a href="https://www.instagram.com/accounts/emailsignup/" class = "singuplink">Зарегистрироваться</a></p>
+</div>
+
+<div class="links">
+    <a href="https://www.instagram.com/about/us/" class="aaa">Meta</a>
+    <a href="https://about.instagram.com/" class="aaa">Информация</a>
+    <a href="https://about.instagram.com/blog" class="aaa">Блог</a>
+    <a href="https://www.instagram.com/developer/" class="aaa">Вакансии</a>
+    <a href="https://help.instagram.com/"class="aaa">Помощь</a>
+    <a href="https://www.instagram.com/developer/" class="aaa">API</a>
+    <a href="https://www.instagram.com/legal/privacy/" class="aaa">Конфиденциальность</a>
+    <a href="https://www.instagram.com/legal/terms/" class="aaa">Условия</a>
+    <a href="https://www.instagram.com/directory/profiles/" class="aaa">Места</a>
+    <a href="https://www.instagram.com/directory/hashtags/" class="aaa">Instagram Lite</a>
+    <a href="https://www.instagram.com/directory/suggested/" class="aaa">Threads</a>
+    <a href="https://www.instagram.com/directory/suggested/" class="aaa">Загрузка контактов и лица, не являющися пользователями</a>
+    <a href="https://www.instagram.com/directory/suggested/" class="aaa">Meta Verified</a>
+</div>
 
 </body>
 </html>
