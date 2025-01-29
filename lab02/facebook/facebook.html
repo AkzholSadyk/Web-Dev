@@ -4,38 +4,125 @@
     <title>Facebook</title>
     <link rel="icon" href="facebook2.png" type="image/png">
     <style>
-        /* body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        } */
-        .container1 {
+        
+        body {
             background-color: rgb(242, 244, 247);
-            top: 200px;
-            left: 0px;
-            width: 1000px;
+            
         }
         .icon {
+            position: absolute;
             font-family: "Helvetica Neue", Arial, sans-serif;
             font-size: 60px;
             color: #1877f2; 
             font-weight: bold;
-            top: 150px; left: 300px;
+            top: 160px; 
+            left: 270px;
         }
         .aaa {
-            font-size: 20px;
-            color: black; 
-            font-family: Arial, Helvetica, sans-serif;
-            top: 250px; left: 300px;
+            position: absolute;
+            font-family: '', sans-serif;
+            font-size: 27px;
+            font-weight: normal;
+            color: #000000;
+            top: 280px;
+            left: 270px;
         }
+        .bbb {
+            position: absolute;
+            top: 130px;
+            left: 845px;
+            width: 365px;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 10px 10px 40px gray;
+        }
+        .bbb input[type="text"],
+        .bbb input[type="password"] {
+            font-size: 17px;
+            width: 100%;
+            padding: 15px;
+            margin: 8px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .bbb .submit {
+            width: 100%;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 22px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .bbb .link {
+            font-size: 15px;
+            color: #1877f2;
+            text-decoration: none;
+            font-family: '', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .bbb .rrr {
+            width: 62.5%;
+            background-color: #16b416;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding: 14px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 17px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .ako {
+            position: absolute;
+            top:500px;  
+            left: 840px;
+            font-family: '', sans-serif;
+            font-weight: normal;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+        .ako .link2 {
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container1">
-        <h1 class="icon">facebook</h1>
-        <h1 class="aaa">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</h1>
+    <h1 class="icon">facebook</h1>
+    <div class="aaa">Facebook помогает вам всегда<br> 
+            оставаться на связи и общаться со <br>
+            своими знакомыми.
     </div>
+
+    <div class="bbb">
+        <form action="#">
+            <input type="text" placeholder="Электронный адрес или номер телефона" required>
+            <input type="password" placeholder="Пароль" required>
+            <button class="submit">Вход</button>
+        </form>
+
+        <a class = "link" href="#">Забыли пароль?</a>
+        <hr color="#dbdbdb" size="1">
+
+        <button class="rrr">Создать новый аккаунт</button>
+    </div>
+
+    <div class="ako"><a class = "link2" href="#">Создать Страницу</a> знаменитости, музыкальной группы или <br> компании.</div>
+    
 </body>
 </html>
