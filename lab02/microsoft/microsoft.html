@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header_content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1330px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 54px;
+        }
+
+        .logo img {
+            width: 108px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #262626;
+            font-size: 13px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 13px;
+            color: #262626;
+            gap: 6px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .profile a:hover {
+            border-bottom-color: #0067b8;
+        }
+
+        .profile img {
+            width: 20px;
+        }
+
+        .account img {
+            width: 30px;
+        }
+
+        .main_container {
+            background: url('fon.png') no-repeat center / cover;
+            padding: 100px 20px 120px;
+        }
+
+        .preview_wrap {
+            max-width: 600px;
+            margin-left: 70px;
+        }
+
+        .main_text h2 {
+            font-size: 2.3rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .main_text p {
+            font-size: 16px;
+            color: #fff;
+            line-height: 1.5;
+            margin: 15px 0;
+        }
+
+        button {
+            background-color: rgb(0, 103, 184);
+            color: #fff;
+            font-weight: 600;
+            border-radius: 2px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(0, 90, 165);
+        }
+
+        .preview_items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 50px auto;
+            max-width: 1330px;
+        }
+
+        .preview_item {
+            width: calc(25% - 20px);
+            text-decoration: none;
+            color: #000;
+            transition: transform 0.3s;
+        }
+
+        .preview_item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item_img img {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .item_text h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .item_text p {
+            line-height: 1.5;
+        }
+
+        .details {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #0067b8;
+            font-size: 14px;
+        }
+
+        .details img {
+            width: 16px;
+            transition: transform 0.3s;
+        }
+
+        .details:hover {
+            text-decoration: underline;
+        }
+
+        .dowload {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #0067b8;
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header_content">
+            <div class="left">
+                <a class="logo" href="#">
+                    <img src="logo.png" alt="logo">
+                </a>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Microsoft 365</a></li>
+                        <li><a href="#">Office</a></li>
+                        <li><a href="#">Windows</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="profile">
+                <a href="#">Продукты Майкрософт</a>
+                <a href="#">Search <img src="search.png" alt="search"></a>
+                <a href="#">Enter <img src="avatar.png" alt="avatar"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main_container">
+        <div class="preview_wrap">
+            <div class="main_text">
+                <h2>Разработано для жизни — <br>сегодня и в будущем</h2>
+                <p>Следующее поколение игр. Ваши цели. Друзья и семья. С<br> Windows 11 вы станете еще ближе к тому, что успели <br>полюбить</p>
+                <button>Проверьте, готов ли ваш ПК</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="preview_items">
+        <a href="#" class="preview_item">
+            <div class="item_img"><img src="first.png" alt="Microsoft Edge"></div>
+            <div class="item_text">
+                <h3>Microsoft Edge</h3>
+                <p>Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей.</p>
+            </div>
+            <button class="download" id = "aaa">Скачать</button>
+        </a>
+
+        <a href="#" class="preview_item">
+            <div class="item_img"><img src="second.png" alt="Microsoft OneDrive"></div>
+            <div class="item_text">
+                <h3>Microsoft OneDrive</h3>
+                <p>Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно.</p>
+            </div>
+            <button class="download">Подробнее</button>
+        </a>
+
+        <a href="#" class="preview_item">
+            <div class="item_img"><img src="third.png" alt="OneNote"></div>
+            <div class="item_text">
+                <h3>OneNote</h3>
+                <p>Приведите свои заметки и дела в порядок.</p>
+            </div>
+            <button class="download">Узнать больше</button>
+        </a>
+
+        <a href="#" class="preview_item">
+            <div class="item_img"><img src="fourth.png" alt="Outlook"></div>
+            <div class="item_text">
+                <h3>Outlook для iOS и Android</h3>
+                <p>Будьте на связи. Организовывайте. Успевайте больше.</p>
+            </div>
+            <button class="download">Найти сейчас</button>
+        </a>
+    </div>
+</body>
+</html>
