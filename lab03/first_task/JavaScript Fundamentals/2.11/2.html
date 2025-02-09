@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let a=prompt('Who are you?');
+
+            if(a=='Admin'){
+                let b=prompt('password...');
+                if(b=='TheMaster'){
+                    alert('Welcome');
+                } else if (pass === '' || pass === null) {
+                    alert( 'Canceled' );
+                } else {
+                    alert( 'Wrong password' );
+                }
+            } else if (a==" " || a==null) {
+                alert('Canceled');
+            } else {
+                alert('I do not know you!')
+            }
+        </script>
+    </body>
+</html>

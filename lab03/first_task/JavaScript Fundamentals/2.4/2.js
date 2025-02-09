@@ -1,0 +1,2 @@
+let earth;
+let visiterName;
