@@ -70,6 +70,8 @@
         </div>
         <ul id="list"></ul>
     </div>
+
+
   <script>
     var list = document.querySelector('ul');
     list.addEventListener('click', function(ev){
@@ -83,10 +85,10 @@
 
     function newElement(){
         var li = document.createElement('li');
-        var inputValue = document.getElementById('task').value;
+        var inputValue = document.getElementById('task').value.trim();
         var t = document.createTextNode(inputValue);
         li.appendChild(t);
-        if(inputValue === ''){
+        if(inputValue == ''){
             alert('You must write something!');
         } else {
             document.getElementById('list').appendChild(li);
