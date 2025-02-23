@@ -23,7 +23,6 @@ import { HousingService } from '../housing.service';
     <app-housing-location
       [housingLocation]="housingLocation">
     </app-housing-location>
-    <button (click)="likeHousing(housingLocation)">❤️ Like</button>
     <button (click)="removeHousing(housingLocation)">🗑️ Delete</button>
   </div>
     </section>
@@ -50,9 +49,6 @@ export class HomeComponent {
       housingLocation => housingLocation?.city.toLowerCase().includes(text.toLowerCase())
     );
     
-  }
-  likeHousing(housingLocation: HousingLocation) {
-    alert(`Liked: ${housingLocation.city}`);
   }
   
   removeHousing(housingLocation: HousingLocation) {

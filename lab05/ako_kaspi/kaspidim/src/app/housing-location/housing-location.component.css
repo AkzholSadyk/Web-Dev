@@ -3,6 +3,21 @@
   border-radius: 30px;
   padding-bottom: 30px;
 }
+button {
+  margin-left: 310px;
+  padding: 10px;
+  border: solid 1px #5DA400;
+  background: #5DA400;
+  color: white;
+  border-radius: 8px;
+}
+
+
+.count {
+
+  margin-top: 20px;
+  margin-left: 20px;
+}
 .listing-heading {
   color: var(--primary-color);
   padding: 10px 20px 0 20px;
@@ -21,6 +36,8 @@
   width: 16px;
   height: 16px;
   transform: scale(0.15);
+  border : 0px;
+  border: solid 1px var(--primary-color);
   border-radius: 30px;
 }
 .listing-location2 {

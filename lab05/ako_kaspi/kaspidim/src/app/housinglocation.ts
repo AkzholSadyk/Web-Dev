@@ -7,4 +7,5 @@ export interface HousingLocation {
   photo: string;
   price: number;
   info2: string;
+  likes?: number;
 }
