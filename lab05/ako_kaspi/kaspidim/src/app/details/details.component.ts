@@ -78,4 +78,5 @@ export class DetailsComponent {
       alert("Пожалуйста, заполните все поля формы перед покупкой!");
     }
   }
+  // ako
 }

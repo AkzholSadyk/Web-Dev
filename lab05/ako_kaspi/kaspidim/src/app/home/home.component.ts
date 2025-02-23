@@ -63,4 +63,6 @@ export class HomeComponent {
       item => item !== housingLocation
     );
   }
+
+  // ako
 }
