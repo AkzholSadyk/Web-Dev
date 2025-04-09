@@ -1,0 +1,48 @@
+.container {
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.company, .vacancy {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.company:hover {
+  background-color: #f0f4ff;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.vacancy {
+  background-color: #fefefe;
+  border-left: 4px solid #007acc;
+}
+
+.vacancy strong {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.vacancy p {
+  margin: 0.25rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
