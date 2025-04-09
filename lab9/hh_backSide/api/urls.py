@@ -7,4 +7,7 @@ urlpatterns = [
     path('vacancies/', views.vacancy_list, name='vacancy-list'),
     path('vacancies/<int:vacancy_id>/', views.vacancy_detail, name='vacancy-detail'),
     path('vacancies/top_ten/', views.top_ten_vacancies, name='top-ten-vacancies'),
+
+    path('applications/', views.application_list, name='application-list'),
+
 ]

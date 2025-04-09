@@ -1,4 +1,5 @@
 from idlelib.debugobj_r import remote_object_tree_item
+from unittest.loader import VALID_MODULE_NAME
 
 from django.db import models
 
@@ -36,4 +37,24 @@ class Vacancy(models.Model):
             'description': self.description,
             'salary': self.salary,
             'company': self.company.name
+        }
+
+
+
+class Application(models.Model):
+    full_name = models.CharField(max_length=255)
+    email = models.TextField()
+    vacancy = models.FloatField()
+    created_at = models.ForeignKey(Vacancy, related_name='vacancies', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.full_name
+
+    def to_json(self):
+        return {
+            'id': self.id,
+            'full_name': self.full_name,
+            'email': self.email,
+            'vacancy': self.vacancy,
+            'company': self.created_at,
         }

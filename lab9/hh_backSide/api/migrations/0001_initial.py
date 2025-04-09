@@ -32,4 +32,16 @@ class Migration(migrations.Migration):
                 ('company', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='vacancies', to='api.company')),
             ],
         ),
+
+        migrations.CreateModel(
+            name='Application',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('full_name', models.CharField(max_length=255)),
+                ('email', models.TextField()),
+                ('vacancy', models.FloatField()),
+                ('created_at', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='vacancies',
+                                              to='api.vacancy')),
+            ],
+        ),
     ]
